@@ -8,16 +8,7 @@ This project explores three key areas where AI enhances software engineering:
 2. **Automated Testing** with Selenium
 3. **Predictive Analytics** for resource allocation using machine learning
 
-## 🗂️ Project Structure
 
-```
-
-ai-se-assignment/ │ ├──task1_code_completion/ │├── copilot_demo.py │├── manual_implementation.py │└── comparison_analysis.md │ ├──task2_automated_testing/
-│├── selenium_test.py │testing_summary.txt │ ├──task3_predictive_analytics/ │├── breast_cancer_analysis.ipynb │├── performance_metrics.txt
-├──ethical_reflection.txt
-├──proposal.txt
-
-```
 
 ## 🚀 Quick Start
 
@@ -29,8 +20,6 @@ ai-se-assignment/ │ ├──task1_code_completion/ │├── copilot_demo.
 ### Installation
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-se-assignment.git
-cd ai-se-assignment
 
 # Install dependencies
 pip install -r task3_predictive_analytics/requirements.txt
