@@ -1,0 +1,19 @@
+ "DocuBot" - AI-Powered Code Documentation & Explanation Generator
+
+1. Purpose: DocuBot is an AI tool designed to solve the chronic problem of poor and outdated code documentation in software engineering.It automatically generates and updates inline comments, docstrings, and high-level architectural documents directly from the codebase, saving developer time and improving code maintainability.
+
+2. Workflow:
+
+· Integration: DocuBot integrates into the IDE (like VS Code) and the CI/CD pipeline (like GitHub Actions).
+· Static Analysis: It first performs static code analysis to understand the structure, function calls, and data flow.
+· AI Explanation: The core engine uses a fine-tuned Large Language Model (LLM) to generate human-readable summaries and descriptions for functions, classes, and complex code blocks.
+· Context Awareness: It can be "context-aware" by reading existing documentation, Jira tickets, or git commit messages to produce more accurate and relevant descriptions.
+· Automated Updates: When a pull request is merged, DocuBot can be triggered to scan the changed code and suggest updates to the relevant documentation, flagging any discrepancies.
+· Developer in the Loop: It provides suggestions as comments in the IDE, which the developer can accept, modify, or reject, ensuring final human oversight.
+
+3. Impact:
+
+· Accelerated Onboarding: New developers can understand the codebase much faster.
+· Improved Maintainability: Clear documentation makes debugging and adding features easier, reducing technical debt.
+· Enforced Consistency: Ensures documentation standards are automatically met across the project.
+· Frees Up Engineers: Drastically reduces the time senior engineers spend on writing and reviewing mundane documentation, allowing them to focus on complex problem-solving.
