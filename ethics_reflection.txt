@@ -1,0 +1,11 @@
+Discussion:
+
+If the predictive model from Task 3 were deployed in a company to triage software bugs, several ethical concerns regarding bias could arise.
+
+1. Potential Biases: The primary risk is an underrepresentation of issues from certain teams or projects. If the historical training data is dominated by bugs from, for example, the front-end team, the model may become less accurate at prioritizing critical back-end or infrastructure issues. This could lead to a feedback loop where certain types of work are consistently deprioritized, demoralizing those teams and potentially leaving severe system-level vulnerabilities unaddressed. Furthermore, if the "priority" labels in the training data were assigned by a homogeneous group of managers, their inherent biases (e.g., favoring visible features over crucial technical debt) would be baked into the model.
+2. Addressing Biases with IBM AIF360: Tools like IBM AI Fairness 360 (AIF360) are essential to mitigate these risks. The toolkit provides a comprehensive suite of algorithms for every stage of the ML pipeline.
+   · Pre-processing: We could use techniques like reweighing to assign different weights to examples from underrepresented teams (e.g., the infrastructure team's bugs) to balance their influence during training.
+   · In-processing: We could use adversarial debiasing algorithms that explicitly penalize the model for making predictions correlated with a protected attribute (like "team of origin").
+   · Post-processing: We could adjust the model's output thresholds for different groups to ensure equalized odds, meaning the model is equally good at catching high-priority bugs across all teams.
+
+By proactively using these fairness tools, we can audit the model, quantify its bias, and apply mitigations to build a more equitable and trustworthy system for resource allocation.
