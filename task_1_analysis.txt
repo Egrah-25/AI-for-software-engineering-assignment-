@@ -1,0 +1,9 @@
+The AI-suggested implementation using sorted() with a lambda function is significantly more efficient and Pythonic than my manual bubble sort implementation.
+
+Efficiency Comparison: The AI version has O(n log n) time complexity using Python's highly optimized Timsort algorithm, while my manual bubble sort has O(n²) complexity, making it impractical for large datasets. The AI solution also uses O(n) space for the new sorted list, same as my approach.
+
+Code Quality: Copilot's version is concise (one line), readable, and leverages Python's built-in capabilities effectively. Notably, it uses .get(key) which gracefully handles missing keys by returning None, preventing KeyErrors. My manual version is more verbose and includes a basic sorting algorithm for educational purposes.
+
+Development Speed: The AI generated production-ready code instantly, while manual implementation took considerably longer. However, writing the manual version provided deeper understanding of sorting mechanics.
+
+For real-world applications, the AI-suggested code is unequivocally better—efficient, robust, and maintainable. It demonstrates how AI tools can accelerate development while promoting best practices. The manual approach, while educationally valuable, serves mainly to underscore the superiority of built-in functions for common tasks like sorting.
